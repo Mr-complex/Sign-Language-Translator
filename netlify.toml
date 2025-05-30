@@ -1,12 +1,13 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+  base = "/"
+  command = "npm install && npm run build"
+  publish = "/dist"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "14"
 
 [dev]
-  command = "npm run dev"
+  command = "npm run start"
   port = 3000
 
 [[redirects]]
